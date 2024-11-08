@@ -16,6 +16,7 @@ INSERT INTO Produits (nom_produit, prix) VALUES
 INSERT INTO Contacts (client_id, date_interaction, type_interaction, commentaire) VALUES
 (1, '2024-10-05', 'appel', 'Présentation de l\'offre CRM'),
 (1, '2024-10-10', 'email', 'Envoi de documentation'),
+
 (2, '2024-10-15', 'réunion', 'Discussion sur les besoins du client'),
 (3, '2024-10-18', 'appel', 'Appel de suivi'),
 (4, '2024-10-20', 'email', 'Réponse aux questions techniques');
