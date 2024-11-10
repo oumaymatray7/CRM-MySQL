@@ -13,7 +13,7 @@ Ce projet contient un ensemble de requêtes SQL utilisées couramment dans les s
 
 Voici la structure de la base de données utilisée dans le projet CRM :
 
-![Diagramme de la Base de Données](sql\doc\diagramme.png)
+![Diagramme de la Base de Données](doc\diagramme.png)
 
 ## Exemples d’Utilisation
 

@@ -12,3 +12,8 @@ Un projet de CRM basique en MySQL pour gérer les clients, les interactions, les
    ```sql
    CREATE DATABASE CRM;
    USE CRM;
+## Diagramme de la Base de Données
+
+Voici la structure de la base de données utilisée dans le projet CRM :
+
+![Diagramme de la Base de Données](sql\doc\diagramme.png)
