@@ -11,7 +11,12 @@ GROUP BY Clients.client_id
 HAVING COUNT(Ventes.vente_id) > 1;
 
 -- Temps moyen entre deux achats pour chaque client
-SELECT Clients.nom, AVG(DATEDIFF(lead(date_vente) OVER (PARTITION BY Clients.client_id ORDER BY date_vente), date_vente)) AS temps_moyen_entre_achats
-FROM Ventes
-JOIN Clients ON Ventes.client_id = Clients.client_id
-GROUP BY Clients.client_id;
+SELECT client_id, AVG(interval_jours) AS temps_moyen_entre_achats
+FROM (
+    SELECT client_id,
+           DATEDIFF(LEAD(date_vente) OVER (PARTITION BY client_id ORDER BY date_vente), date_vente) AS interval_jours
+    FROM Ventes
+) AS ventes_suivantes
+WHERE interval_jours IS NOT NULL
+GROUP BY client_id;
+

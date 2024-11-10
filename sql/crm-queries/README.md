@@ -9,6 +9,11 @@ Ce projet contient un ensemble de requêtes SQL utilisées couramment dans les s
 - `support/` : Requêtes pour le suivi des tickets de support client et l’analyse des performances de l’équipe de support.
 - `marketing/` : Requêtes pour suivre l’efficacité des campagnes marketing et analyser la fidélisation client.
 - `analytics/` : Requêtes pour des analyses avancées telles que la valeur à vie des clients et la prédiction du churn.
+## Diagramme de la Base de Données
+
+Voici la structure de la base de données utilisée dans le projet CRM :
+
+![Diagramme de la Base de Données](sql\doc\diagramme.png)
 
 ## Exemples d’Utilisation
 
